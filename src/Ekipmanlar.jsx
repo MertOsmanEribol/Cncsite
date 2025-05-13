@@ -5,25 +5,25 @@ import Footer from "./Components/Footer";
 
 function Ekipmanlar() {
   const uretimTezgahlari = [
-    { id: 1, baslik: "2 Eksenli CNC Tornalar", img: "src/assets/Imgs/axix2cnc.jpg" },
-    { id: 2, baslik: "3 Eksenli CNC Tornalar", img: "src/assets/Imgs/axix3cnc.png" },
-    { id: 3, baslik: "Y Eksenli CNC Torna", img: "src/assets/Imgs/yaxixcnc.jpeg" },
-    { id: 4, baslik: "4 Eksenli Divizörlü İşleme Merkezi", img: "src/assets/Imgs/axix4isleme.jpeg" },
-    { id: 5, baslik: "5 Eksenli Tornalama Merkezi", img: "src/assets/Imgs/axix5turning.jpg" },
-    { id: 6, baslik: "5 Eksenli İşleme Merkezi", img: "src/assets/Imgs/axix5center.jpeg" },
+    { id: 1, baslik: "2 Eksenli CNC Tornalar", img: "Imgs/axix2cnc.jpg" },
+    { id: 2, baslik: "3 Eksenli CNC Tornalar", img: "Imgs/axix3cnc.png" },
+    { id: 3, baslik: "Y Eksenli CNC Torna", img: "Imgs/yaxixcnc.jpeg" },
+    { id: 4, baslik: "4 Eksenli Divizörlü İşleme Merkezi", img: "Imgs/axix4isleme.jpeg" },
+    { id: 5, baslik: "5 Eksenli Tornalama Merkezi", img: "Imgs/axix5turning.jpg" },
+    { id: 6, baslik: "5 Eksenli İşleme Merkezi", img: "Imgs/axix5center.jpeg" },
   ];
   
   const taslama = [
-    { id: 1, baslik: "Dairesel ve aynı anda Çift Yüzey Taşlama Makinaları", img: "src/assets/Imgs/circulargrinding.jpg" },
-    { id: 2, baslik: "Silindirik Taşlama Makinaları", img: "src/assets/Imgs/cylindricalgrinding.png" },
+    { id: 1, baslik: "Dairesel ve aynı anda Çift Yüzey Taşlama Makinaları", img: "Imgs/circulargrinding.jpg" },
+    { id: 2, baslik: "Silindirik Taşlama Makinaları", img: "Imgs/cylindricalgrinding.png" },
   ];
   
   const olcum = [
-    { id: 1, baslik: "Çift Taraflı Aynı Anda Taşlama Makinaları – Lepleme İşlemi", img: "src/assets/Imgs/doubleside.jpg" },
-    { id: 2, baslik: "CMM Koordinat Ölçme Tezgahı", img: "src/assets/Imgs/cmm.jpg" },
-    { id: 3, baslik: "Dijital Mihengir", img: "src/assets/Imgs/mihengir.jpg" },
-    { id: 4, baslik: "Profil Projeksiyon", img: "src/assets/Imgs/projeksiyon.jpg" },
-    { id: 5, baslik: "Yüzey Kalitesi Ölçüm Cihazları", img: "src/assets/Imgs/yuzey.jpg" },
+    { id: 1, baslik: "Çift Taraflı Aynı Anda Taşlama Makinaları – Lepleme İşlemi", img: "Imgs/doubleside.jpg" },
+    { id: 2, baslik: "CMM Koordinat Ölçme Tezgahı", img: "Imgs/cmm.jpg" },
+    { id: 3, baslik: "Dijital Mihengir", img: "Imgs/mihengir.jpg" },
+    { id: 4, baslik: "Profil Projeksiyon", img: "Imgs/projeksiyon.jpg" },
+    { id: 5, baslik: "Yüzey Kalitesi Ölçüm Cihazları", img: "Imgs/yuzey.jpg" },
   ];
 
   return (
@@ -35,7 +35,7 @@ function Ekipmanlar() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
           <img
             className="w-full h-80 object-cover object-center"
-            src="src/assets/Imgs/ekipman.jpeg"
+            src="Imgs/ekipman.jpeg"
             alt="Araştırma ve Geliştirme"
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">

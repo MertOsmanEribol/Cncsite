@@ -48,7 +48,7 @@ function Yetenekler() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
           <img 
             className="w-full h-80 object-cover object-center" 
-            src="src/assets/Imgs/yetenekler.jpg" 
+            src="Imgs/yetenekler.jpg" 
             alt="Yetenekler ve Kabiliyetler" 
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">

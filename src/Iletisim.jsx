@@ -61,12 +61,12 @@ function Iletisim() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
         <img 
           className="w-full h-80 object-cover object-center" 
-          src="src/assets/Imgs/iletisim.jpg" 
+          src="Imgs/iletisim.jpg" 
           alt="Araştırma ve Geliştirme" 
         />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-2">Kapsam Makina</h1>
+            <h1 className="text-5xl font-bold mb-2">cnc Makina</h1>
             <div className="w-24 h-1 bg-purple-500 mx-auto my-4"></div>
             <h2 className="text-2xl font-light">Vizyon & Hedefler</h2>
           </div>
@@ -203,7 +203,7 @@ function Iletisim() {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-gray-700">info@kapsammakina.com</p>
+                    <p className="text-gray-700">info@cncmakina.com</p>
                   </div>
                 </div>
               </div>
@@ -212,7 +212,7 @@ function Iletisim() {
             {/* Harta bölümü */}
             <div className="bg-white shadow-lg rounded-lg p-2 h-64">
               <iframe 
-                title="Kapsam Makina Konum"
+                title="cnc Makina Konum"
                 className="w-full h-full rounded"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.0759600703656!2d29.1326!3d41.0236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzI1LjAiTiAyOcKwMDcnNTcuNCJF!5e0!3m2!1str!2str!4v1620634810000!5m2!1str!2str"
                 allowFullScreen

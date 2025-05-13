@@ -14,7 +14,7 @@ function Muhendislik() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-gray-900/70 z-10"></div>
         <img 
           className="w-full h-80 object-cover object-center" 
-          src="./src/assets/Imgs/engineering.jpg" 
+          src="Imgs/engineering.jpg" 
           alt="Mühendislik" 
         />
         <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -31,7 +31,7 @@ function Muhendislik() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Mühendislik Yeteneklerimiz</h2>
-            <p className="text-gray-600 mb-10 text-center">Kapsam Makina olarak, en gelişmiş mühendislik yetkinliklerimizle müşterilerimize hizmet veriyoruz.</p>
+            <p className="text-gray-600 mb-10 text-center">cnc Makina olarak, en gelişmiş mühendislik yetkinliklerimizle müşterilerimize hizmet veriyoruz.</p>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">

@@ -13,7 +13,7 @@ function Ik() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
         <img 
           className="w-full h-80 object-cover object-center" 
-          src="src/assets/Imgs/Ik.jpg" 
+          src="Imgs/Ik.jpg" 
           alt="Araştırma ve Geliştirme" 
         />
         <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -29,7 +29,7 @@ function Ik() {
         
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
           <p className="mb-6 text-gray-700 leading-relaxed">
-            Kapsam Makina, rekabet gücünü arttırmak, kaliteli ürün ve hizmet anlayışıyla sektörde liderler arasında yer almak ve "Sınırsız Şekillendirme" vizyonu ile şirketlerini geleceğe taşımak için İnsan Kaynakları Yönetimi'ni iş stratejilerinin odağında konumlar ve tüm İK uygulamalarını birbirine bağlı, bütünleşik bir sistemde yönetmeyi hedefler.
+            cnc Makina, rekabet gücünü arttırmak, kaliteli ürün ve hizmet anlayışıyla sektörde liderler arasında yer almak ve "Sınırsız Şekillendirme" vizyonu ile şirketlerini geleceğe taşımak için İnsan Kaynakları Yönetimi'ni iş stratejilerinin odağında konumlar ve tüm İK uygulamalarını birbirine bağlı, bütünleşik bir sistemde yönetmeyi hedefler.
           </p>
           
           <p className="mb-6 text-gray-700 leading-relaxed">

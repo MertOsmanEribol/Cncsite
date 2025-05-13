@@ -10,22 +10,22 @@ function Kalite() {
       id: 1, 
       baslik: "ISO 9001", 
       aciklama: "ISO 9001 standartlarına uygun şekilde üretim yapıyoruz. Bu sertifika, müşteri memnuniyetini artırmak için kalite yönetim sistemlerini sürekli iyileştirdiğimizin kanıtıdır.", 
-      gorsel: "src/assets/Imgs/Iso9001.jpg",
-      icon: "src/assets/Imgs/icons/quality.svg"
+      gorsel: "Imgs/Iso9001.jpg",
+      icon: "Imgs/icons/quality.svg"
     },
     { 
       id: 2, 
       baslik: "ISO 14001", 
       aciklama: "ISO 14001 standartlarında çevre yönetim sistemleri ile üretim gerçekleştiriyoruz. Bu, çevresel etkileri minimize etmek için taahhüdümüzü gösterir.", 
-      gorsel: "src/assets/Imgs/Iso14001.jpg",
-      icon: "src/assets/Imgs/icons/environment.svg"
+      gorsel: "Imgs/Iso14001.jpg",
+      icon: "Imgs/icons/environment.svg"
     },
     { 
       id: 3, 
       baslik: "OHSAS 18001", 
       aciklama: "OHSAS 18001 standartlarında iş sağlığı ve güvenliği yönetim sistemleri ile çalışmalarımızı sürdürüyoruz. Çalışanlarımızın güvenliği bizim için önceliktir.", 
-      gorsel: "src/assets/Imgs/ohsas18001.jpg",
-      icon: "src/assets/Imgs/icons/safety.svg"
+      gorsel: "Imgs/ohsas18001.jpg",
+      icon: "Imgs/icons/safety.svg"
     }
   ];
 
@@ -40,7 +40,7 @@ function Kalite() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
           <img
             className="w-full h-80 object-cover object-center"
-            src="src/assets/Imgs/vizyon.jpg"
+            src="Imgs/vizyon.jpg"
             alt="Kalite Standartlarımız"
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">

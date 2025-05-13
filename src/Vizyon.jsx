@@ -12,12 +12,12 @@ function Vizyon() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
         <img 
           className="w-full h-80 object-cover object-center" 
-          src="src/assets/Imgs/vizyon.jpg" 
+          src="Imgs/vizyon.jpg" 
           alt="Araştırma ve Geliştirme" 
         />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-2">Kapsam Makina</h1>
+            <h1 className="text-5xl font-bold mb-2">cnc Makina</h1>
             <div className="w-24 h-1 bg-purple-500 mx-auto my-4"></div>
             <h2 className="text-2xl font-light">Vizyon & Hedefler</h2>
           </div>

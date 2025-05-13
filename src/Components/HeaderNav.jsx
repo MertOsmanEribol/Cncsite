@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "/Imgs/cnclogo.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -44,12 +46,9 @@ function HeaderNav() {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 md:hidden">
         <div className="flex-1" />
         <div className="flex justify-center flex-1">
-        <a href="/"> <img
-            className="w-24 sm:w-28"
-            src="http://www.kapsammakina.com/uploads/logo/kapsamlogo.png"
-            alt="Kapsam Logo"
-          /></a>
-         
+          <Link to="/">
+            <img className="w-24 sm:w-28" src={logo} alt="cnc Logo" />
+          </Link>
         </div>
         <div className="flex justify-end flex-1">
           <button onClick={toggleMobileMenu} className="focus:outline-none">
@@ -61,7 +60,10 @@ function HeaderNav() {
       {mobileMenuOpen && (
         <div className="bg-white shadow-lg md:hidden">
           <ul className="py-2">
-            <a href="/"><li className="px-4 py-2 hover:bg-gray-100">Anasayfa</li></a> 
+            <li className="px-4 py-2 hover:bg-gray-100">
+              <Link to="/">Anasayfa</Link>
+            </li>
+
             <li className="px-4 py-2">
               <div
                 className="flex justify-between items-center w-full"
@@ -72,12 +74,19 @@ function HeaderNav() {
               </div>
               {openDropdown1 && (
                 <ul className="pl-4 mt-2">
-               <a href="./Hakkimizda"> <li className="py-2">Hakkımızda</li></a>  
-              <a href="./Tarihce"><li className="py-2">Tarihçe</li></a>    
-               <a href="./Vizyon"><li className="py-2">Vizyon ve Hedefler</li></a>   
+                  <li className="py-2">
+                    <Link to="/Hakkimizda">Hakkımızda</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link to="/Tarihce">Tarihçe</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link to="/Vizyon">Vizyon ve Hedefler</Link>
+                  </li>
                 </ul>
               )}
             </li>
+
             <li className="px-4 py-2">
               <div
                 className="flex justify-between items-center w-full"
@@ -88,11 +97,16 @@ function HeaderNav() {
               </div>
               {openDropdown2 && (
                 <ul className="pl-4 mt-2">
-               <a href="./Arge"> <li className="py-2">Arge</li></a>  
-            <a href="./Muhendislik"><li className="py-2">Mühendislik Yetenekleri</li></a>      
+                  <li className="py-2">
+                    <Link to="/Arge">Arge</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link to="/Muhendislik">Mühendislik Yetenekleri</Link>
+                  </li>
                 </ul>
               )}
             </li>
+
             <li className="px-4 py-2">
               <div
                 className="flex justify-between items-center w-full"
@@ -103,26 +117,40 @@ function HeaderNav() {
               </div>
               {openDropdown3 && (
                 <ul className="pl-4 mt-2">
-                 <a href="./Uretim"><li className="py-2">Üretim</li></a> 
-                 <a href="./Ekipmanlar"><li className="py-2">Ekipmanlar</li></a> 
-                 <a href="./Yetenekler"><li className="py-2">Yetenekler</li></a> 
+                  <li className="py-2">
+                    <Link to="/Uretim">Üretim</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link to="/Ekipmanlar">Ekipmanlar</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link to="/Yetenekler">Yetenekler</Link>
+                  </li>
                 </ul>
               )}
             </li>
-           <a href="./Kalite"><li className="px-4 py-2 hover:bg-gray-100">Kalite</li></a> 
-            <a href="./Ik"><li className="px-4 py-2 hover:bg-gray-100">İK</li></a>
-          <a href="./Iletisim"><li className="px-4 py-2 hover:bg-gray-100">İletişim</li></a>  
+
+            <li className="px-4 py-2 hover:bg-gray-100">
+              <Link to="/Kalite">Kalite</Link>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-100">
+              <Link to="/Ik">İK</Link>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-100">
+              <Link to="/Iletisim">İletişim</Link>
+            </li>
+
             <li className="px-4 py-4 border-t border-gray-200">
               <div className="flex space-x-6 justify-center">
-                <a href="#" className="text-blue-600">
+                <Link to="#" className="text-blue-600">
                   <FaFacebook size={20} />
-                </a>
-                <a href="#" className="text-pink-600">
+                </Link>
+                <Link to="#" className="text-pink-600">
                   <FaInstagram size={20} />
-                </a>
-                <a href="#" className="text-green-600">
+                </Link>
+                <Link to="#" className="text-green-600">
                   <FaWhatsapp size={20} />
-                </a>
+                </Link>
               </div>
             </li>
           </ul>
@@ -131,23 +159,22 @@ function HeaderNav() {
 
       {/* Desktop Navbar */}
       <div className="hidden md:flex max-w-screen-2xl mx-auto items-center justify-between px-4 lg:px-8 xl:px-12 py-2">
-        {/* Logo */}
         <div className="flex-shrink-0">
-        <a href="/"> <img
-            className="w-24 md:w-28 lg:w-32"
-            src="http://www.kapsammakina.com/uploads/logo/kapsamlogo.png"
-            alt="Kapsam Logo"
-          /></a> 
+          <Link to="/">
+            <img
+              className="w-24 md:w-28 lg:w-32"
+              src={logo}
+              alt="cnc Logo"
+            />
+          </Link>
         </div>
 
-        {/* Menü */}
         <div className="flex-grow flex justify-center">
           <ul className="flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm md:text-base lg:text-lg xl:text-xl">
-           <a href="/"><li className="cursor-pointer transition-all duration-200 hover:text-blue-700">
-              Anasayfa
-            </li></a> 
+            <li className="cursor-pointer transition-all duration-200 hover:text-blue-700">
+              <Link to="/">Anasayfa</Link>
+            </li>
 
-            {/* Dropdown 1 */}
             <li className="relative group">
               <div
                 className="flex items-center cursor-pointer transition hover:text-blue-700"
@@ -157,14 +184,19 @@ function HeaderNav() {
               </div>
               {openDropdown1 && (
                 <ul className="absolute mt-4 left-0 bg-white rounded shadow-lg py-2 w-48 z-20 animate-fade-in">
-                 <a href="/Hakkimizda"><li className="px-4 py-2 hover:bg-gray-100">Hakkımızda</li></a> 
-              <a href="./Tarihce"><li className="px-4 py-2 hover:bg-gray-100">Tarihçe</li></a>    
-          <a href="./Vizyon">  <li className="px-4 py-2 hover:bg-gray-100">Vizyon ve Hedefler</li></a>      
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Hakkimizda">Hakkımızda</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Tarihce">Tarihçe</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Vizyon">Vizyon ve Hedefler</Link>
+                  </li>
                 </ul>
               )}
             </li>
 
-            {/* Dropdown 2 */}
             <li className="relative group">
               <div
                 className="flex items-center cursor-pointer transition hover:text-blue-700"
@@ -174,13 +206,16 @@ function HeaderNav() {
               </div>
               {openDropdown2 && (
                 <ul className="absolute mt-4 left-0 bg-white rounded shadow-lg py-2 w-48 z-20 animate-fade-in">
-               <a href="./Arge"><li className="px-4 py-2 hover:bg-gray-100">Arge</li></a>   
-             <a href="./Muhendislik">  <li className="px-4 py-2 hover:bg-gray-100">Mühendislik Yetenekleri</li></a>   
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Arge">Arge</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Muhendislik">Mühendislik Yetenekleri</Link>
+                  </li>
                 </ul>
               )}
             </li>
 
-            {/* Dropdown 3 */}
             <li className="relative group">
               <div
                 className="flex items-center cursor-pointer transition hover:text-blue-700"
@@ -190,30 +225,50 @@ function HeaderNav() {
               </div>
               {openDropdown3 && (
                 <ul className="absolute mt-4 left-0 bg-white rounded shadow-lg py-2 w-48 z-20 animate-fade-in">
-              <a href="./Uretim"><li className="px-4 py-2 hover:bg-gray-100">Üretim</li></a>    
-              <a href="./Ekipmanlar"><li className="px-4 py-2 hover:bg-gray-100">Ekipmanlar</li></a>    
-             <a href="./Yetenekler"><li className="px-4 py-2 hover:bg-gray-100">Yetenekler</li></a>     
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Uretim">Üretim</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Ekipmanlar">Ekipmanlar</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link to="/Yetenekler">Yetenekler</Link>
+                  </li>
                 </ul>
               )}
             </li>
 
-           <a href="./Kalite"><li className="cursor-pointer transition hover:text-blue-700">Kalite</li></a> 
-         <a href="./Ik"><li className="cursor-pointer transition hover:text-blue-700">İK</li></a>   
-          <a href="./Iletisim"><li className="cursor-pointer transition hover:text-blue-700">İletişim</li></a>  
+            <li className="cursor-pointer transition hover:text-blue-700">
+              <Link to="/Kalite">Kalite</Link>
+            </li>
+            <li className="cursor-pointer transition hover:text-blue-700">
+              <Link to="/Ik">İK</Link>
+            </li>
+            <li className="cursor-pointer transition hover:text-blue-700">
+              <Link to="/Iletisim">İletişim</Link>
+            </li>
           </ul>
         </div>
 
-        {/* Sosyal Medya */}
         <div className="flex-shrink-0 flex gap-3">
-          <a href="#" className="text-blue-600 hover:text-blue-800 transition-colors">
+          <Link
+            to="#"
+            className="text-blue-600 hover:text-blue-800 transition-colors"
+          >
             <FaFacebook className="w-7 h-7" />
-          </a>
-          <a href="#" className="text-pink-600 hover:text-pink-800 transition-colors">
+          </Link>
+          <Link
+            to="#"
+            className="text-pink-600 hover:text-pink-800 transition-colors"
+          >
             <FaInstagram className="w-7 h-7" />
-          </a>
-          <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
+          </Link>
+          <Link
+            to="#"
+            className="text-green-600 hover:text-green-800 transition-colors"
+          >
             <FaWhatsapp className="w-7 h-7" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -15,27 +15,24 @@ import Iletisim from "./Iletisim";
 
 function App() {
   return (
-    <>
-      <div className=" back font-['Poppins'] ">
-        <Router>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/Hakkimizda" element={<Hakkimizda />} />
-            <Route path="/Vizyon" element={<Vizyon />} />
-            <Route path="/Tarihce" element={<Tarihce />} />
-            <Route path="/Arge" element={<Arge />} />
-            <Route path="/Muhendislik" element={<Muhendislik />} />
-            <Route path="/Uretim" element={<Uretim />} />
-            <Route path="/Ekipmanlar" element={<Ekipmanlar />} />
-            <Route path="/Yetenekler" element={<Yetenekler />} />
-            <Route path="/Kalite" element={<Kalite />} />
-            <Route path="/Ik" element={<Ik />} />
-                        <Route path="/Iletisim" element={<Iletisim />} />
-
-          </Routes>
-        </Router>
-      </div>
-    </>
+    <div className="back font-['Poppins']">
+      <Router basename="/Cncsite"> 
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Hakkimizda" element={<Hakkimizda />} />
+          <Route path="/Vizyon" element={<Vizyon />} />
+          <Route path="/Tarihce" element={<Tarihce />} />
+          <Route path="/Arge" element={<Arge />} />
+          <Route path="/Muhendislik" element={<Muhendislik />} />
+          <Route path="/Uretim" element={<Uretim />} />
+          <Route path="/Ekipmanlar" element={<Ekipmanlar />} />
+          <Route path="/Yetenekler" element={<Yetenekler />} />
+          <Route path="/Kalite" element={<Kalite />} />
+          <Route path="/Ik" element={<Ik />} />
+          <Route path="/Iletisim" element={<Iletisim />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

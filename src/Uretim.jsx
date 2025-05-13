@@ -68,17 +68,17 @@ function Uretim() {
   const uretimGorselleri = [
     {
       id: 1,
-      img: "src/assets/Imgs/uretim1.jpg",
+      img: "Imgs/uretim1.jpg",
       alt: "Üretim Tezgahı"
     },
     {
       id: 2,
-      img: "src/assets/Imgs/uretim2.jpg",
+      img: "Imgs/uretim2.jpg",
       alt: "Üretim Hattı"
     },
     {
       id: 3,
-      img: "src/assets/Imgs/engineer.jpg",
+      img: "Imgs/engineer.jpg",
       alt: "Mühendislik Çözümleri"
     }
   ];
@@ -93,7 +93,7 @@ function Uretim() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-blue-900/70 z-10"></div>
         <img
           className="w-full h-64 md:h-80 object-cover object-center"
-          src="src/assets/Imgs/uretim2.jpg"
+          src="Imgs/uretim2.jpg"
           alt="Üretim"
         />
         <div className="absolute inset-0 flex items-center justify-center z-20">
@@ -121,7 +121,7 @@ function Uretim() {
               </div>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Kapsam Makina olarak, en son teknolojiye sahip makine parkurumuz ve deneyimli teknik ekibimiz ile hassas metal imalatı konusunda sektörün önde gelen firmalarındanız. Müşteri ihtiyaçlarını en ince detayına kadar analiz ederek, kalite standartlarından ödün vermeden üretim yapmaktayız.
+                cnc Makina olarak, en son teknolojiye sahip makine parkurumuz ve deneyimli teknik ekibimiz ile hassas metal imalatı konusunda sektörün önde gelen firmalarındanız. Müşteri ihtiyaçlarını en ince detayına kadar analiz ederek, kalite standartlarından ödün vermeden üretim yapmaktayız.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
